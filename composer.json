@@ -1,0 +1,16 @@
+{
+    "name": "texnixe/related",
+    "description": "Kirby Related Pages Plugin",
+    "version": "0.8.0",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sonja Broda",
+            "email": "info@texniq.de"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    }
+}

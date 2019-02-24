@@ -1,0 +1,12 @@
+{
+  "name": "kirby-related",
+  "description": "Kirby Related plugin",
+  "author": "Sonja Broda <sonja@texniq.de>",
+  "license": "MIT",
+  "version": "0.8.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/texnixe/kirby-related"
+  },
+  "type": "kirby-plugin"
+}

@@ -1,3 +1,5 @@
+![GitHub release](https://img.shields.io/github/release/texnixe/kirby3-related.svg?maxAge=1800) ![License](https://img.shields.io/github/license/mashape/apistatus.svg) ![Kirby 3 Pluginkit](https://img.shields.io/badge/Pluginkit-YES-cca000.svg)
+
 # Kirby Related
 
 Kirby 3 Related is a [Kirby CMS](https://getkirby.com) plugin that lets you fetch pages or files related to the current page/file based on matching values in a given field. The resulting collection is sorted by number of matches as an indicator of relevance.
@@ -9,8 +11,8 @@ The current page has a tags field with three values (red, green, blue). You want
 
 This plugin is free but if you use it in a commercial project please consider
 
-[making a donation](https://www.paypal.me/texnixe/10) or
-[buying a Kirby license using this affiliate link](https://a.paddle.com/v2/click/1129/38380?link=1170)
+- [making a donation](https://www.paypal.me/texnixe/10) or
+- [buying a Kirby license using this affiliate link](https://a.paddle.com/v2/click/1129/38380?link=1170)
 
 ## Installation
 

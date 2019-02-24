@@ -1,7 +1,7 @@
 {
     "name": "texnixe/related",
-    "description": "Kirby Related Pages Plugin",
-    "version": "0.8.0",
+    "description": "Fetch related pages or files based on the values of a given field ",
+    "version": "0.9.0",
     "type": "kirby-plugin",
     "license": "MIT",
     "authors": [
@@ -9,6 +9,11 @@
             "name": "Sonja Broda",
             "email": "info@texniq.de"
         }
+    ],
+    "keywords": [
+        "kirby3",
+        "kirby3-cms",
+        "kirby3-plugin",
     ],
     "require": {
         "getkirby/composer-installer": "^1.1"

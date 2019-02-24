@@ -2,6 +2,7 @@
 
 namespace Texnixe\Related;
 
+
 class Related
 {
 
@@ -41,7 +42,7 @@ class Related
         // define variables
         $searchCollection = $options['searchCollection'];
         $matches          = $options['matches'];
-        $searchField      = str::lower($options['searchField']);
+        $searchField      = strtolower($options['searchField']);
         $delimiter        = $options['delimiter'];
         $languageFilter   = $options['languageFilter'];
 

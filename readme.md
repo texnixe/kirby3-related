@@ -41,10 +41,11 @@ foreach($relatedPages as $p) {
   echo $p->title();
 }
 
-````
+```
 
 ### Related files
 
+```
 <?php
 
 $relatedImages = $image->related($options);

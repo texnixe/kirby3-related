@@ -5,6 +5,12 @@ Kirby 3 Related is a [Kirby CMS](https://getkirby.com) plugin that lets you fetc
 Example:
 The current page has a tags field with three values (red, green, blue). You want to find all sibling pages with at least 2 matching tag values.
 
+## Commercial Usage
+
+This plugin is free but if you use it in a commercial project please consider
+
+[making a donation](https://www.paypal.me/texnixe/10) or
+[buying a Kirby license using this affiliate link](https://a.paddle.com/v2/click/1129/38380?link=1170)
 
 ## Installation
 

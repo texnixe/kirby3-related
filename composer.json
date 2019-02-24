@@ -13,7 +13,7 @@
     "keywords": [
         "kirby3",
         "kirby3-cms",
-        "kirby3-plugin",
+        "kirby3-plugin"
     ],
     "require": {
         "getkirby/composer-installer": "^1.1"

@@ -3,7 +3,7 @@
   "description": "Kirby Related plugin",
   "author": "Sonja Broda <sonja@texniq.de>",
   "license": "MIT",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/texnixe/kirby-related"

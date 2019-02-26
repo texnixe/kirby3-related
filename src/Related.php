@@ -89,7 +89,7 @@ class Related
         $collection = $options['searchCollection']?? $basis->siblings(false);
 
         // try to get data from the cache, else create new
-        if($response = static::cache()->get(md5($basis->id().$options))) {
+        if($response = static::cache()->get(md5($basis->id().implode(',',$options)))) {
             $data = $response['data'];
             $related = static::getClassName($basis, array_keys($data));
         } else {
@@ -97,7 +97,7 @@ class Related
         }
 
         static::cache()->set(
-            md5($basis->id() . $options),
+            md5($basis->id() . implode(',', $options)),
             $related,
             option('texnixe.related.expires')
 

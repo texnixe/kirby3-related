@@ -2,7 +2,7 @@
 /**
  * Kirby 3 Related Pages Plugin
  *
- * @version   0.9.1
+ * @version   0.9.2
  * @author    Sonja Broda <info@texniq.de>
  * @copyright Sonja Broda <info@texniq.de>
  * @link      https://github.com/texnixe/kirby-related

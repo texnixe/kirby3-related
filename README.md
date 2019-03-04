@@ -64,6 +64,17 @@ foreach($relatedImages as $image) {
 
 ```
 
+### Config options
+
+You can set the cache to true or false using the `texnixe.related.cache` option.
+
+```
+return [
+  'texnixe.related.cache' => true
+];
+```
+
+
 ### Options
 
 You can pass an array of options:
@@ -79,6 +90,7 @@ $relatedPages = $page->related(array(
   ));
 ?>
 ```
+
 #### searchCollection
 
 The pages collection to search in.
@@ -104,9 +116,14 @@ Default: 1
 Filter related items by language in a multi-language installation.
 Default: false
 
+## Disclaimer
+
+This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you encounter any problem, please [create an issue](https://github.com/texnixe/kirby3-codepen/issues/new).
 
 ## License
 
-Kirby 3 Related is open-sourced software licensed under the MIT license.
+[MIT](https://opensource.org/licenses/MIT)
 
-Copyright © 2019 Sonja Broda info@texniq.de https://sonjabroda.com
+
+It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
+

@@ -1,6 +1,6 @@
 <?php
 
-namespace Texnixe\Related;
+namespace texnixe\Related;
 
 
 class Related
@@ -47,7 +47,7 @@ class Related
         $languageFilter   = $options['languageFilter'];
 
          // get search items from active basis
-         $searchItems     = $basis->{$searchField}()->split(',');
+         $searchItems     = $basis->{$searchField}()->split($delimiter);
          $noOfSearchItems = count($searchItems);
 
         if($noOfSearchItems > 0) {
@@ -76,10 +76,10 @@ class Related
 
     public static function getClassName($basis, $items = '')
     {
-        if(is_a($basis, 'Kirby\Cms\Page')) {
+        if(is_a($basis, '\Kirby\Cms\Page')) {
             return pages($items);
         }
-        if(is_a($basis, 'Kirby\Cms\File')) {
+        if(is_a($basis, '\Kirby\Cms\File')) {
             return new \Kirby\Cms\Files($items);
         }
     }

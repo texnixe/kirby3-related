@@ -5,7 +5,7 @@ namespace texnixe\Related;
 /**
  * Kirby 3 Related Pages Plugin
  *
- * @version   1.0.0
+ * @version   1.0.1
  * @author    Sonja Broda <info@texniq.de>
  * @copyright Sonja Broda <info@texniq.de>
  * @link      https://github.com/texnixe/kirby-related

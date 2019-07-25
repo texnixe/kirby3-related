@@ -1,7 +1,7 @@
 {
     "name": "texnixe/related",
     "description": "Fetch related pages or files based on the values of a given field ",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "kirby-plugin",
     "license": "MIT",
     "authors": [

@@ -12,7 +12,7 @@ return [
     'file.create:after' => function() {
         Related::flush();
     },
-    'page.update:after' => function() {
+    'file.update:after' => function() {
         Related::flush();
     }
 ];

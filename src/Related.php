@@ -57,11 +57,11 @@ class Related
             $matches > $noOfSearchItems? $matches = $noOfSearchItems: $matches;
 
             for($i = $noOfSearchItems; $i >= $matches; $i--) {
-            $relevant{$i} = $searchCollection->filter(function($b) use($searchItems, $searchField, $delimiter, $i) {
+            $relevant[$i] = $searchCollection->filter(function($b) use($searchItems, $searchField, $delimiter, $i) {
                 return count(array_intersect($searchItems, $b->$searchField()->split($delimiter))) == $i;
             });
 
-            $related->add($relevant{$i});
+            $related->add($relevant[$i]);
         }
 
         // filter collection by current language if $languageFilter set to true

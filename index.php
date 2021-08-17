@@ -2,6 +2,10 @@
 
 namespace texnixe\Related;
 
+use Kirby\Cms\App as Kirby;
+use Kirby\Cms\Files;
+use Kirby\Cms\Pages;
+
 /**
  * Kirby 3 Related Pages Plugin
  *
@@ -16,7 +20,7 @@ load([
     'texnixe\\related\\related' => 'src/Related.php'
 ], __DIR__);
 
-\Kirby::plugin('texnixe/related', [
+Kirby::plugin('texnixe/related', [
     'options' => [
         'cache' => option('texnixe.related.cache', true),
         'expires' => (60*24*7), // minutes
@@ -29,12 +33,12 @@ load([
     ],
     'pageMethods' => [
         'related' => function (array $options = []) {
-            return Related::getRelated($this, $options);
+            return Related::getRelated($this, new Pages(), $options);
         }
     ],
     'fileMethods' => [
         'related' => function (array $options = []) {
-            return Related::getRelated($this, $options);
+            return Related::getRelated($this, new Files(), $options);
         }
     ],
     'hooks' => require __DIR__ . '/hooks.php'

@@ -3,7 +3,7 @@
 namespace texnixe\Related;
 
 return [
-    'page.*:after' => function($event, $page) {
+    'page.*:after' => function() {
         Related::flush();
     },
     'file.*:after' => function() {

@@ -37,9 +37,7 @@ class Related
      */
     public static function flush(): bool
     {
-        if (static::$cache) {
-            return static::cache()->flush();
-        }
+        return static::cache()->flush();
     }
 
     /**
@@ -73,7 +71,6 @@ class Related
         $itemCount        = count($searchItems);
 
         if ($itemCount > 0) {
-            dump($itemCount);
             // no. of matches can't be greater than no. of searchItems
             $matches > $itemCount ? $matches = $itemCount : $matches;
 
@@ -108,17 +105,19 @@ class Related
     {
         // try to get data from the cache, else create new
         if ($response = static::cache()->get(md5($base->id() . implode(',', $options)))) {
-            $data    = $response['data'];
-            $related = $collection->data($data ?? []);
+            foreach($response as $key => $data) {
+                $collection->add($key);
+            }
+            $related = $collection;
         } else {
+            // else fetch new data and store in cache
             $related = static::data($base, $collection, $options);
+            static::cache()->set(
+                md5($base->id() . implode(',', $options)),
+                $related->toArray(),
+                option('texnixe.related.expires')
+            );
         }
-
-        static::cache()->set(
-            md5($base->id() . implode(',', $options)),
-            $related,
-            option('texnixe.related.expires')
-        );
 
         return $related;
     }

@@ -82,7 +82,7 @@ You can pass an array of options:
 ```
 <?php
 $relatedPages = $page->related(array(
-  'searchCollection' => $page->siblings()->listed(),
+  'searchCollection' => $page->siblings(false)->listed(),
   'searchField'      => 'tags',
   'matches'          => 2,
   'delimiter'        => ',',
